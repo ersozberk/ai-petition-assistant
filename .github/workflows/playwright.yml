@@ -21,18 +21,23 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Install Backend Dependencies
+    - name: Install & Start Backend
       run: |
         cd backend
         pip install -r requirements.txt
-        # Test amaçlı sunucuyu arka planda başlatıyoruz
         nohup uvicorn main:app --host 0.0.0.0 --port 8000 &
-        sleep 5 # Sunucunun açılması için kısa bir bekleme
-
-    - name: Install Frontend Dependencies
+      
+    - name: Install & Start Frontend
       run: |
         cd frontend
         npm install
+        # Frontend'i test modunda arka planda başlatıyoruz
+        nohup npm run dev & 
+        
+    - name: Wait for Services
+      run: |
+        # Servislerin hazır olması için 15 saniye bekle (Next.js derlemesi zaman alabilir)
+        sleep 15
 
     - name: Install Playwright Browsers
       run: |
@@ -42,7 +47,6 @@ jobs:
     - name: Run Playwright tests
       run: |
         cd frontend
-        # Backend URL'ini çevre değişkeni olarak veriyoruz
         NEXT_PUBLIC_API_URL=http://localhost:8000 npx playwright test
       
     - uses: actions/upload-artifact@v4

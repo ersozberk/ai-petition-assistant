@@ -1,0 +1,53 @@
+name: Playwright Tests
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Install Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install Backend Dependencies
+      run: |
+        cd backend
+        pip install -r requirements.txt
+        # Test amaçlı sunucuyu arka planda başlatıyoruz
+        nohup uvicorn main:app --host 0.0.0.0 --port 8000 &
+        sleep 5 # Sunucunun açılması için kısa bir bekleme
+
+    - name: Install Frontend Dependencies
+      run: |
+        cd frontend
+        npm install
+
+    - name: Install Playwright Browsers
+      run: |
+        cd frontend
+        npx playwright install --with-deps
+
+    - name: Run Playwright tests
+      run: |
+        cd frontend
+        # Backend URL'ini çevre değişkeni olarak veriyoruz
+        NEXT_PUBLIC_API_URL=http://localhost:8000 npx playwright test
+      
+    - uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: playwright-report
+        path: frontend/playwright-report/
+        retention-days: 30

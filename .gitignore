@@ -1,0 +1,8 @@
+# .gitignore
+node_modules/
+.next/
+__pycache__/
+venv/
+env/
+.env
+.DS_Store

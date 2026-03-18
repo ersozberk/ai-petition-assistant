@@ -22,15 +22,15 @@ A production-ready Full-Stack AI application designed for LegalTech. It generate
    git clone [https://github.com/yourusername/ai-petition-assistant.git](https://github.com/yourusername/ai-petition-assistant.git)
    ```
 
-Create .env files:
+2. Create .env files:
 
 backend/.env -> HUGGINGFACE_API_KEY=your_token
 
 frontend/.env.local -> NEXT_PUBLIC_API_URL=http://localhost:8000
 
-Run the application:
+3. Run the application:
 
 ```bash
 docker-compose up --build
 ```
-Visit http://localhost:3000
+4. Visit http://localhost:3000

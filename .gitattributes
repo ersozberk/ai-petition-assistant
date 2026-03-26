@@ -1,0 +1,4 @@
+
+# frontend/**/* linguist-documentation
+
+backend/**/*.py linguist-detectable=true

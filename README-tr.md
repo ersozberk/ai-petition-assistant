@@ -27,7 +27,7 @@ Adli teknoloji için tasarlanmış, üretime hazır, tam yığınlı bir yapay z
 
 ```bash
 
-git clone [https://github.com/yourusername/ai-petition-assistant.git](https://github.com/yourusername/ai-petition-assistant.git)
+git clone git clone https://github.com/ersozberk/ai-petition-assistant.git
 
 ```
 

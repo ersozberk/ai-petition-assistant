@@ -1,4 +1,7 @@
 # ⚖️ AI Petition Assistant 
+
+🌐 **Languages:** [English](README.md) | [Turkish](README-tr.md)
+
 A production-ready Full-Stack AI application designed for LegalTech. It generates formal consumer rights petitions using LLMs while strictly protecting Personally Identifiable Information (PII).
 
 ## Key Features & Engineering Highlights

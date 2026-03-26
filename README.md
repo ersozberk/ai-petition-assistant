@@ -23,7 +23,7 @@ A production-ready Full-Stack AI application designed for LegalTech. It generate
 
 1. Clone the repository:
    ```bash
-   git clone [[https://github.com/yourusername/ai-petition-assistant.git](https://github.com/yourusername/ai-petition-assistant.git)](https://github.com/ersozberk/ai-petition-assistant.git)
+   git clone https://github.com/ersozberk/ai-petition-assistant.git
    ```
 
 2. Create .env files:

@@ -1,5 +1,7 @@
 # Tüketici Hakları Yapay Zeka Dilekçe Asistanı
 
+🌐 **Diller:** [English](README.md) | [Türkçe](README-tr.md)
+
 Adli teknoloji için tasarlanmış, üretime hazır, tam yığınlı bir yapay zeka uygulaması. Kişisel Tanımlanabilir Bilgileri (PII) kesinlikle korurken, LLM'leri kullanarak resmi tüketici hakları dilekçeleri oluşturur.
 
 ## Temel Özellikler ve Mühendislik Öne Çıkan Noktaları

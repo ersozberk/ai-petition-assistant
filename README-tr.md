@@ -1,6 +1,7 @@
 # Tüketici Hakları Yapay Zeka Dilekçe Asistanı
 
-🌐 **Diller:** [İngilizce](README.md) | [Türkçe](README-tr.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/ersozberk/ai-petition-assistant/edit/main/README.md)
+[![pt-br](https://img.shields.io/badge/lang-tr-green.svg)](https://github.com/ersozberk/ai-petition-assistant/edit/main/README-tr.md)
 
 Adli teknoloji için tasarlanmış, üretime hazır, tam yığınlı bir yapay zeka uygulaması. Kişisel Tanımlanabilir Bilgileri (PII) kesinlikle korurken, LLM'leri kullanarak resmi tüketici hakları dilekçeleri oluşturur.
 

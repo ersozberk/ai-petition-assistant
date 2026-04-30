@@ -4,7 +4,7 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/ersozberk/ai-petition-assistant/edit/main/README.md)
 [![pt-br](https://img.shields.io/badge/lang-tr-green.svg)](https://github.com/ersozberk/ai-petition-assistant/edit/main/README-tr.md)
 
-A production-ready Full-Stack AI application designed for LegalTech. It generates formal consumer rights petitions using LLMs while strictly protecting Personally Identifiable Information (PII).
+A Full-Stack AI application designed for LegalTech. It generates formal consumer rights petitions using LLMs while strictly protecting Personally Identifiable Information (PII).
 
 ## Key Features & Engineering Highlights
 
